@@ -5,11 +5,11 @@ rules:
   - DOMAIN-SUFFIX,17ce.com,DIRECT
 
   # Speedtest和Fast.com走代理
-  - DOMAIN-SUFFIX,speedtest.net,Proxy
-  - DOMAIN-SUFFIX,fast.com,Proxy
-  - DOMAIN-SUFFIX,ooklaserver.net,Proxy
-  - DOMAIN-SUFFIX,api.fast.com,Proxy
-  - DOMAIN-KEYWORD,speedtest,Proxy
+  - DOMAIN-SUFFIX,speedtest.net,DIRECT
+  - DOMAIN-SUFFIX,fast.com,DIRECT
+  - DOMAIN-SUFFIX,ooklaserver.net,DIRECT
+  - DOMAIN-SUFFIX,api.fast.com,DIRECT
+  - DOMAIN-KEYWORD,speedtest,DIRECT
 
   # Google相关服务代理
   - DOMAIN-SUFFIX,google.com,Proxy
