@@ -1,0 +1,63 @@
+# OpenClash 哔哩哔哩详细直连规则集
+# 该规则集旨在确保用户在访问哔哩哔哩时能够直接连接而不通过代理
+
+rules:
+  # Bilibili 相关主要域名直连
+  - DOMAIN-SUFFIX,bilibili.com,DIRECT             # 哔哩哔哩主站
+  - DOMAIN-SUFFIX,bilivideo.com,DIRECT            # 哔哩哔哩视频站
+  - DOMAIN-SUFFIX,biliapi.com,DIRECT               # 哔哩哔哩 API 接口
+  - DOMAIN-SUFFIX,bilibili.tv,DIRECT               # 哔哩哔哩 TV 站
+  - DOMAIN-SUFFIX,bilibili.cn,DIRECT               # 哔哩哔哩中国域名
+  - DOMAIN-SUFFIX,bilibili.us,DIRECT               # 哔哩哔哩美国域名
+  - DOMAIN-SUFFIX,bilibili.co,DIRECT               # 哔哩哔哩其他地区域名
+
+  # Bilibili 相关服务和接口域名直连
+  - DOMAIN-SUFFIX,up.bilibili.com,DIRECT           # 哔哩哔哩 UP 主页面
+  - DOMAIN-SUFFIX,api.bilibili.com,DIRECT          # 哔哩哔哩主 API 接口
+  - DOMAIN-SUFFIX,comment.bilibili.com,DIRECT      # 哔哩哔哩评论系统
+  - DOMAIN-SUFFIX,sn.bilibili.com,DIRECT           # 哔哩哔哩快照服务
+  - DOMAIN-SUFFIX,pub.bilibili.com,DIRECT          # 哔哩哔哩公共服务
+  - DOMAIN-SUFFIX,live.bilibili.com,DIRECT         # 哔哩哔哩直播页面
+  - DOMAIN-SUFFIX,static.hdslb.com,DIRECT          # 哔哩哔哩静态资源域名
+  - DOMAIN-SUFFIX,voice.bilibili.com,DIRECT         # 哔哩哔哩音频服务
+  - DOMAIN-SUFFIX,app.bilibili.com,DIRECT           # 哔哩哔哩移动应用
+  - DOMAIN-SUFFIX,acg.bilibili.com,DIRECT           # 哔哩哔哩 ACG 相关服务
+  - DOMAIN-SUFFIX,link.bilibili.com,DIRECT          # 哔哩哔哩链接服务
+  - DOMAIN-SUFFIX,hdslb.com,DIRECT                  # 哔哩哔哩流媒体服务器
+  - DOMAIN-SUFFIX,api.bilibili.co,DIRECT            # 哔哩哔哩 API 备用域名
+  - DOMAIN-SUFFIX,bangumi.bilibili.com,DIRECT       # 哔哩哔哩番剧页面
+  - DOMAIN-SUFFIX,support.bilibili.com,DIRECT       # 哔哩哔哩客服支持页面
+  - DOMAIN-SUFFIX,activity.bilibili.com,DIRECT      # 哔哩哔哩活动页面
+  - DOMAIN-SUFFIX,player.bilibili.com,DIRECT        # 哔哩哔哩播放器
+  - DOMAIN-SUFFIX,storage.bilibili.com,DIRECT       # 哔哩哔哩存储服务
+  - DOMAIN-SUFFIX,api.bilibilih5.com,DIRECT         # 哔哩哔哩 H5 API 接口
+  - DOMAIN-SUFFIX,search.bilibili.com,DIRECT        # 哔哩哔哩搜索页面
+  - DOMAIN-SUFFIX,cos.bilibili.com,DIRECT           # 哔哩哔哩云存储服务
+  - DOMAIN-SUFFIX,news.bilibili.com,DIRECT          # 哔哩哔哩新闻页面
+  - DOMAIN-SUFFIX,store.bilibili.com,DIRECT         # 哔哩哔哩商店页面
+  - DOMAIN-SUFFIX,vip.bilibili.com,DIRECT           # 哔哩哔哩会员服务
+  - DOMAIN-SUFFIX,help.bilibili.com,DIRECT          # 哔哩哔哩帮助页面
+  - DOMAIN-SUFFIX,archive.bilibili.com,DIRECT       # 哔哩哔哩视频归档
+  - DOMAIN-SUFFIX,frontend.bilibili.com,DIRECT      # 哔哩哔哩前端服务
+  - DOMAIN-SUFFIX,forum.bilibili.com,DIRECT         # 哔哩哔哩论坛
+  - DOMAIN-SUFFIX,ob.bilibili.com,DIRECT             # 哔哩哔哩开放平台
+  - DOMAIN-SUFFIX,service.bilibili.com,DIRECT       # 哔哩哔哩服务页面
+
+  # 视频格式直连
+  - DOMAIN-SUFFIX,mp4.bilibilivideo.com,DIRECT      # 哔哩哔哩 MP4 视频格式
+  - DOMAIN-SUFFIX,flv.bilibilivideo.com,DIRECT      # 哔哩哔哩 FLV 视频格式
+  - DOMAIN-SUFFIX,webm.bilibilivideo.com,DIRECT     # 哔哩哔哩 WEBM 视频格式
+  - DOMAIN-SUFFIX,hd.bilibilivideo.com,DIRECT        # 哔哩哔哩 高清视频
+
+  # APP 相关服务直连
+  - DOMAIN-SUFFIX,api.bilibili.tv,DIRECT             # 哔哩哔哩 TV 端 API
+  - DOMAIN-SUFFIX,play.bilibili.com,DIRECT           # 哔哩哔哩播放页面
+
+  # 确保中国大陆IP直连
+  - GEOIP,CN,DIRECT                                  # 根据地理位置直连中国大陆用户
+
+  # 直接连接指定的 IP
+  - IP-CIDR,223.109.232.94/32,DIRECT                # 直连特定 IP
+
+  # 其他流量默认走代理
+  - MATCH,Proxy                                     # 未匹配的流量走代理
