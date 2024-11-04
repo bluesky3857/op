@@ -1,0 +1,4 @@
+rules:
+  - IP-CIDR,223.109.0.0/16,DIRECT  # 直接连接至 223.109 IP 段
+  - GEOIP,CN,DIRECT                # 所有中国大陆 IP 直连
+  - MATCH,Proxy                    # 其他流量通过代理
