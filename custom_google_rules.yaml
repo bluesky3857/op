@@ -1,0 +1,67 @@
+rules:
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: DOMAIN-SUFFIX
+  value: google.com
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: DOMAIN-SUFFIX
+  value: google.com.hk
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: DOMAIN-SUFFIX
+  value: google.cn
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: DOMAIN-SUFFIX
+  value: googleapis.com
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: DOMAIN-SUFFIX
+  value: googleusercontent.com
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: DOMAIN-SUFFIX
+  value: gstatic.com
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: DOMAIN-SUFFIX
+  value: googlesyndication.com
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: DOMAIN-SUFFIX
+  value: google-analytics.com
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: DOMAIN-SUFFIX
+  value: googletagmanager.com
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: DOMAIN-SUFFIX
+  value: googletagservices.com
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: DOMAIN-SUFFIX
+  value: googlevideo.com
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: IP-CIDR
+  value: 172.217.0.0/16
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: IP-CIDR
+  value: 142.250.0.0/16
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: IP-CIDR
+  value: 108.177.0.0/16
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: IP-CIDR
+  value: 64.233.160.0/19
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: IP-CIDR
+  value: 66.102.0.0/20
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: IP-CIDR
+  value: 66.249.80.0/20
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: IP-CIDR
+  value: 72.14.192.0/18
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: IP-CIDR
+  value: 74.125.0.0/16
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: IP-CIDR
+  value: 173.194.0.0/16
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: IP-CIDR
+  value: 209.85.128.0/17
+- policy: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+  type: IP-CIDR
+  value: 216.239.32.0/19
