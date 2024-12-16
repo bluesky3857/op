@@ -1,0 +1,8 @@
+rules:
+  # 三星网络检测相关域名走代理
+  - DOMAIN-SUFFIX,connectivitycheck.gstatic.com,Proxy
+  - DOMAIN-SUFFIX,google.com,Proxy
+
+  # 默认流量分流策略
+  - GEOIP,CN,DIRECT  # 国内IP直连
+  - MATCH,Proxy      # 其他流量走代理
